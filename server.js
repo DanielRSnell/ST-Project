@@ -12,5 +12,5 @@ app.use(
   }));
 
 app.listen(4000, () => {
-  console.log('Hackcoin is now live. - proceed.');
+  console.log('Topical Playground - ST Project');
 });

@@ -62,7 +62,7 @@ const RootQuery = new GraphQLObjectType({
       }
     },
     getJson: {
-      type: new GraphQLList(getJson),
+      type: new GraphQLList(jsonServer),
       args: {
         //No Args Needed
       },
@@ -72,4 +72,8 @@ const RootQuery = new GraphQLObjectType({
       }
     }
   }
+});
+
+module.exports = new GraphQLSchema({
+  query: RootQuery
 });
