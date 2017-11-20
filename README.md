@@ -9,17 +9,40 @@ You can use the format included in the json.js file with a set of queries domain
 ##Packages in use:
 
 Express 
+
 GraphQL 
+
 Express-GraphQL 
+
 Json-Server (replace) 
+
 Axios 
+
 Nodemon
 
 ##Getting Started
 
-Clone the package about In Git Bash go to the projects folder Run npm json:server to start the json-server Run npm dev:server to start the GraphQL Server Register with https://developer-support.majestic.com/api for your API key In your browser go to http://Localhost4000/graphql Run the following command for a test:
+Clone the package
 
-{ grabList(domain: “ShareThis.com”, apiKey: “”){ Topic } }
+In Git Bash go to the projects folder 
+
+Run npm json:server to start the json-server 
+
+Run npm dev:server to start the GraphQL Server 
+
+Register with https://developer-support.majestic.com/api for your API key 
+
+In your browser go to http://Localhost4000/graphql 
+
+Run the following command for a test:
+
+{ 
+
+grabList(domain: “ShareThis.com”, apiKey: “”){ 
+
+Topic } 
+
+}
 
 This will return topical data by domain query. In-order to run this through a list, I recommend establishing a new schema for Big Query CLI linking to your database, run a query for a list, then execute forEach loop that executes the above GraphQL command.
 
