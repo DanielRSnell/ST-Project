@@ -1,0 +1,19 @@
+{
+  "name": "sharethis-project",
+  "version": "1.0.0",
+  "description": "Topical GraphQL Express Server",
+  "main": "server.js",
+  "scripts": {
+    "dev:server": "nodemon server.js",
+    "json:server": "json-server --watch data.json"
+  },
+  "author": "Daniel R. Snell - Hi@DanielSnell.Ninja",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "nodemon": "^1.12.1"
+  }
+}
